@@ -1,0 +1,25 @@
+{
+  "name" : "mainchain",
+  "version" : "1.0",
+  "description" : "Verify authenticity of any image on the web.",
+  "externally_connectable": {
+      "matches": [
+          "https://*/*", 
+          "http://*/*"
+      ]
+  },
+  "background" : { "scripts": ["info/core.min.js", "info/sha256.min.js", "info/enc-latin1.min.js", "background.js"] },
+  "permissions" : [
+    "contextMenus",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+   ],
+  "minimum_chrome_version" : "6.0.0.0",
+  "icons" : {
+    "16" : "icon.png",
+    "48" : "imageinfo-48.png",
+    "128" : "imageinfo-128.png"
+  },
+  "manifest_version": 2
+}
